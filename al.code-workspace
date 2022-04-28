@@ -8,6 +8,12 @@
                     },
                     {
                         "path":  "App1"
+                    },
+                    {
+                        "path":  "Default App Name"
+                    },
+                    {
+                        "path":  "Default Base App Name"
                     }
                 ],
     "settings":  {
