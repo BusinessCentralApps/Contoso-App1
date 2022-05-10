@@ -31,7 +31,7 @@ defaults:
 
 jobs:
   Initialization:
-    runs-on: [ windows-latest ]
+    runs-on: [ self-hosted ]
     outputs:
       telemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
     steps:
@@ -40,25 +40,25 @@ jobs:
 
       - name: Initialize the workflow
         id: init
-        uses: microsoft/AL-Go-Actions/WorkflowInitialize@preview
+        uses: freddydk/AL-Go-Actions/WorkflowInitialize@main
         with:
           eventId: "DO0092"
 
   CreateApp:
-    runs-on: [ windows-latest ]
+    runs-on: [ self-hosted ]
     needs: [ Initialization ]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Read settings
-        uses: microsoft/AL-Go-Actions/ReadSettings@preview
+        uses: freddydk/AL-Go-Actions/ReadSettings@main
         with:
           parentTelemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
           get: type
 
       - name: Creating a new app
-        uses: microsoft/AL-Go-Actions/CreateApp@preview
+        uses: freddydk/AL-Go-Actions/CreateApp@main
         with:
           project: ${{ github.event.inputs.project }}
           type: ${{ env.type }}
@@ -70,7 +70,7 @@ jobs:
 
   PostProcess:
     if: always()
-    runs-on: [ windows-latest ]
+    runs-on: [ self-hosted ]
     needs: [ Initialization, CreateApp ]
     steps:
       - name: Checkout
@@ -78,7 +78,7 @@ jobs:
 
       - name: Finalize the workflow
         id: PostProcess
-        uses: microsoft/AL-Go-Actions/WorkflowPostProcess@preview
+        uses: freddydk/AL-Go-Actions/WorkflowPostProcess@main
         with:
           eventId: "DO0092"
           telemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
