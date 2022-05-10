@@ -10,5 +10,8 @@
             "release_status":  "latestBuild"
         }
     ],
+    "installApps": [
+        "https://businesscentralapps.blob.core.windows.net/bingmaps-pte/latest/bingmaps-pte-apps.zip"
+    ],
     "generateDependencyArtifact":  true
 }
