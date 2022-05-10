@@ -1,6 +1,9 @@
 ﻿{
     "type":  "PTE",
-    "templateUrl":  "https://github.com/microsoft/AL-Go-PTE@preview",
-    "gitHubRunner":  "self-hosted",
-    "bcContainerHelperVersion":  "preview"
+    "templateUrl":  "https://github.com/freddydk/AL-Go-PTE@main",
+    "runs-on":  "self-hosted",
+    "bcContainerHelperVersion":  "preview",
+    "NextMajorSchedule":  "0 2 * * 0",
+    "NextMinorSchedule":  "0 2 * * 6",
+    "CurrentSchedule":  "0 2 * * 1,2,3,4,5",
 }
