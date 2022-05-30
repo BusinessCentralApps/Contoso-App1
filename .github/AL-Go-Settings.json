@@ -1,7 +1,7 @@
 ﻿{
     "type":  "PTE",
     "templateUrl":  "https://github.com/freddydk/AL-Go-PTE@main",
-    "runs-on":  "self-hosted",
+    "runs-on":  "bc-build",
     "bcContainerHelperVersion":  "preview",
     "NextMajorSchedule":  "0 2 * * 0",
     "NextMinorSchedule":  "0 2 * * 6",
