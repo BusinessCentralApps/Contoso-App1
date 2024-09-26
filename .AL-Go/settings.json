@@ -14,7 +14,7 @@
                                       }
                                   ],
     "installApps":  [
-                        "https://businesscentralapps.blob.core.windows.net/bingmaps-pte/latest/bingmaps-pte-apps.zip"
+                        "https://github.com/microsoft/bcsamples-bingmaps.pte/releases/download/24.0.0/bcsamples-bingmaps.pte-main-Apps-24.0.169.0.zip"
                     ],
     "generateDependencyArtifact":  true,
     "RepoVersion":  "2.0"
