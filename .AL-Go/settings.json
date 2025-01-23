@@ -10,7 +10,7 @@
                                       {
                                           "repo":  "https://github.com/businesscentralapps/contoso-common",
                                           "release_status":  "latestBuild",
-                                          "AuthTokenSecret": "GhTokenWorkflow"
+                                          "AuthTokenSecret": "NewToken"
                                       }
                                   ],
     "installApps":  [
