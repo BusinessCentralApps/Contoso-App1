@@ -1,5 +1,6 @@
 {
   "type": "PTE",
   "templateUrl": "https://github.com/freddydk/AL-Go@noPAT",
-  "templateSha": "eb166e171d29d106fc60f0730e15c5424d5c6efb"
+  "templateSha": "eb166e171d29d106fc60f0730e15c5424d5c6efb",
+  "PullRequestTrigger": "pull_request"
 }
